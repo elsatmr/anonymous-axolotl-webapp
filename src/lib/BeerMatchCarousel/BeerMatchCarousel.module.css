@@ -1,0 +1,11 @@
+.arrows {
+  position: relative;
+  top: 40%;
+  color: white;
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.carouselContainer {
+  width: 100%;
+}

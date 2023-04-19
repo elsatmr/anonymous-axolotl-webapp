@@ -1,0 +1,18 @@
+.pageContainer {
+  transition: opacity 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.pageContainer.exit {
+  opacity: 0;
+}
+
+.textContainer {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 40%;
+  padding: 2rem;
+  border-radius: 10px;
+}

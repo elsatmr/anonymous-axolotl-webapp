@@ -1,0 +1,36 @@
+.preferenceMatchContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.topTenRow {
+  display: flex;
+  justify-content: center;
+}
+
+.homePageContainer {
+  padding: 2rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+
+.topTenContainer {
+  margin-top: 2rem;
+  /* background-color: red; */
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+.subHeaderContainer {
+  margin-top: 2rem;
+  /* background-color: red; */
+}
