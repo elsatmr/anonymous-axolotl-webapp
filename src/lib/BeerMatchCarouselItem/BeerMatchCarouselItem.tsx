@@ -9,15 +9,16 @@ interface Props {
 const BeerMatchCarouselItem = ({ beer }: Props) => {
   return (
     <div className={styles.carouselItemContainer}>
-      <h1>🍺</h1>
-      <h2>{beer.beerName}</h2>
-      {/* <p>
-        <i>{beer.style}</i>
-      </p>
-      <div className={styles.abvBrewerContainer}>
-        <p>{beer.brewerId}</p>
-        <p>{beer.abv}</p>
-      </div> */}
+      <div className={styles.childContainer}>
+        <div className={styles.beerLogo}>🍺</div>
+        <h2>{beer.beerName}</h2>
+        <div className={styles.abvBrewerContainer}>
+          <p>Aroma: {parseInt(beer.aroma) / 2}</p>
+          <p>Appearance: {parseInt(beer.appearance) / 2}</p>
+          <p>Taste: {parseInt(beer.taste) / 2}</p>
+          <p>Mouthfeel: {parseInt(beer.mouthfeel) / 2}</p>
+        </div>
+      </div>
     </div>
   );
 };

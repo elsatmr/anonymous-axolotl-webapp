@@ -34,3 +34,8 @@ h1 {
   margin-top: 2rem;
   /* background-color: red; */
 }
+
+.loaderContainer {
+  display: flex;
+  justify-content: center;
+}

@@ -25,7 +25,7 @@ export const BeerMatchReducer = createReducer(initialState, (builder) => {
         beerName: action.payload[i][0],
         appearance: action.payload[i][1],
         aroma: action.payload[i][2],
-        palate: action.payload[i][3],
+        mouthfeel: action.payload[i][3],
         taste: action.payload[i][4],
       };
       state.match.push(beer);

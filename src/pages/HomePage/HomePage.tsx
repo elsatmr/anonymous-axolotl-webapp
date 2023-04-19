@@ -12,6 +12,7 @@ import lager from '../../utils/images/lager.png';
 import winter from '../../utils/images/winter-ale.png';
 import summer from '../../utils/images/summer.png';
 import SearchBar from '../../lib/SearchBar/SearchBar';
+import BeatLoader from 'react-spinners/BeatLoader';
 
 const HomePage = () => {
   const dispatch = useAppDispatch();
@@ -30,19 +31,31 @@ const HomePage = () => {
       <PreferenceCard />
       <div className={styles.subHeaderContainer}>
         <h2>Top 10 Beers Based On Your Preference</h2>
-
         {beerMatch.length > 0 && <BeerMatchCarousel />}
+        {beerMatch.length === 0 && (
+          <div className={styles.loaderContainer}>
+            <BeatLoader color="white" />
+          </div>
+        )}
       </div>
       <div className={styles.topTenContainer}>
         <div className={styles.topTenHeadingContainer}>
           <h2>Top 10s By Anonymous Axolotl</h2>
         </div>
         <div className={styles.topTenRow}>
-          <TopTenCard img={ipa} text="Top 10 IPA(s)" />
-          <TopTenCard img={lager} text="Top 10 Lager(s)" />
-          <TopTenCard img={ale} text="Top 10 Ale(s)" />
-          <TopTenCard img={winter} text="Top 10 Most Reviewed in Winter" />
-          <TopTenCard img={summer} text="Top 10 Most Reviewed in Summer" />
+          <TopTenCard img={ipa} text="Top 10 IPA(s)" url="/topipa" />
+          <TopTenCard img={lager} text="Top 10 Lager(s)" url="/toplager" />
+          <TopTenCard img={ale} text="Top 10 Ale(s)" url="/topale" />
+          <TopTenCard
+            img={winter}
+            text="Top 10 Most Reviewed in Winter"
+            url="/topwinter"
+          />
+          <TopTenCard
+            img={summer}
+            text="Top 10 Most Reviewed in Summer"
+            url="/topsummer"
+          />
         </div>
       </div>
     </div>
