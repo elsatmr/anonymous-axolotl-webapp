@@ -18,6 +18,7 @@ import {
   getTopTenSummerAction,
   getTopTenWinterAction,
 } from './redux/actions/TopTenActions';
+import SearchBeerPage from './pages/SearchBeerPage/SearchBeerPage';
 
 const router = createBrowserRouter([
   {
@@ -67,6 +68,10 @@ const router = createBrowserRouter([
         action={getTopTenWinterAction}
       />
     ),
+  },
+  {
+    path: '/search',
+    element: <SearchBeerPage />,
   },
 ]);
 

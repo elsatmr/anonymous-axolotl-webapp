@@ -1,0 +1,67 @@
+.searchBeerHeader {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+h1 {
+  font-size: 34pt;
+}
+
+.searchItem {
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.searchItemChild {
+  padding: 1rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.searchItemHeader {
+  display: flex;
+}
+
+.searchItemContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.searchItemDetails {
+  display: flex;
+  justify-content: space-between;
+}
+
+.beerLogo {
+  margin-right: 1rem;
+  font-size: 40pt;
+}
+
+.resultsContainer {
+  height: 65vh;
+  overflow: scroll;
+  margin-top: 2rem;
+}
+
+.parentContainer {
+  padding: 1rem;
+  padding-top: 3rem;
+}
+
+.searchBeerHeaderContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.searchBar {
+  width: 50%;
+}
+
+.searchBarContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}

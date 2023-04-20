@@ -26,7 +26,9 @@ const HomePage = () => {
       <WelcomeHeader />
       <div className={styles.headerContainer}>
         <h1>Welcome, {userState.name}</h1>
-        <SearchBar />
+        <div className={styles.searchBarContainer}>
+          <SearchBar />
+        </div>
       </div>
       <PreferenceCard />
       <div className={styles.subHeaderContainer}>

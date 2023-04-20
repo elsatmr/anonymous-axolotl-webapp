@@ -23,7 +23,6 @@
 
 .topTenContainer {
   margin-top: 2rem;
-  /* background-color: red; */
 }
 
 h1 {
@@ -32,10 +31,13 @@ h1 {
 
 .subHeaderContainer {
   margin-top: 2rem;
-  /* background-color: red; */
 }
 
 .loaderContainer {
   display: flex;
   justify-content: center;
+}
+
+.searchBarContainer {
+  width: 30%;
 }
