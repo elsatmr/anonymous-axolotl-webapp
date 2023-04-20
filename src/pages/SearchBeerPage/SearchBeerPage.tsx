@@ -5,11 +5,17 @@ import styles from './SearchBeerPage.module.css';
 import { IBeerSearch } from '../../utils/types/types';
 import { useAppSelector } from '../../redux/hooks';
 import SearchBar from '../../lib/SearchBar/SearchBar';
+import { useNavigate } from 'react-router-dom';
 
 const SearchBeerPage = () => {
   const results: IBeerSearch[] = useAppSelector(
     (state) => state.BeerSearchReducer.results
   );
+  const navigate = useNavigate();
+
+  const handleLogoClick = () => {
+    navigate('/home');
+  };
 
   return (
     <div className={styles.parentContainer}>
@@ -19,6 +25,7 @@ const SearchBeerPage = () => {
             component="img"
             src={Logo}
             sx={{ width: '13%', height: '100%', mr: 5 }}
+            onClick={handleLogoClick}
           />
           <h1>Search Results</h1>
         </div>
